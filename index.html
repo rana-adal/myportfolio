@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adal's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007bff, #00d4ff);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            transition: background 0.4s ease;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #222;
+            background: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 10px;
+        }
+
+        section {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .skill-card, .project-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            width: 250px;
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover, .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>👋 Hi, I'm Adal</h1>
+        <p>BS Computer Science Student | FAST University CFD Campus</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            My name is <strong>Adal</strong>. I am currently pursuing my <strong>Bachelor’s in Computer Science</strong> 
+            at <strong>FAST University, CFD Campus</strong>. I belong to <strong>Village Jhans, Tehsil Pasrur, District Sialkot</strong>.
+            I have a deep interest in programming, and my favorite language is <strong>C++</strong>.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-card">💻 C++</div>
+            <div class="skill-card">🌐 HTML</div>
+            <div class="skill-card">🎨 CSS</div>
+            <div class="skill-card">⚙️ JavaScript</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>🧠 Student Management System</h3>
+                <p>A simple C++ project for managing student records using file handling.</p>
+            </div>
+            <div class="project-card">
+                <h3>🌍 Personal Portfolio</h3>
+                <p>This very website! Built using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:f250752@cfd.nu.edu.pk">f250752@cfd.nu.edu.pk</a></p>
+        <p>🌍 From: Village Jhans, Tehsil Pasrur, District Sialkot</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Adal | Made with ❤️ and C++</p>
+    </footer>
+
+    <script>
+        // Simple header color change on scroll
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+            if (window.scrollY > 50) {
+                header.style.background = "#0056b3";
+            } else {
+                header.style.background = "linear-gradient(135deg, #007bff, #00d4ff)";
+            }
+        });
+    </script>
+</body>
+</html>
